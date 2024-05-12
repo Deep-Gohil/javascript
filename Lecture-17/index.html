@@ -4,9 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        #products{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+        }
+        #products div img{
+            width: 180px;
+            height: 190px;
+        }
+        #products div{
+            border: 1px solid black;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        #products div img:hover{
+            transform: scale(1.1);
+            border: none;
+        }
+        #products button{
+            background-color: red;
+            border: none;
+            color: white;
+            padding: 10px;
+            font-size:18px;
+        }
+        #products button:hover{
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
-    
+    <div id="products">
+    </div>
 </body>
 <script src="./script.js"></script>
 </html>
