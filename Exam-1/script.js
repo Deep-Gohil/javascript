@@ -21,9 +21,8 @@ const UIMaker = () => {
         role = document.createElement("td");
         deleteButton = document.createElement("button");
         deleteButton.innerHTML = "Delete";
+        
         deleteButton.addEventListener("click", () => handleDelete(index,ele.salary));
-
-
 
         td4 = document.createElement("td");
         td4.append(deleteButton);
@@ -36,8 +35,8 @@ const UIMaker = () => {
         tr.append(employee, job, department, salary, email, experience, role, td4,)
         document.getElementById("tbody").append(tr);
     });
-    document.getElementById("result").innerHTML = `Total Employee : ${company.length} Total salary : ${salary_sum}`;
-    // document.getElementById("salary").innerHTML = `Total salary : ${salary_sum}`;
+    document.getElementById("result").innerHTML = `Total Employee : ${company.length}`;
+    document.getElementById("total-salary").innerHTML = `Total salary : ${salary_sum}`;
     console.log(salary_sum);
 }
 const handlCompanyData = (e) => {
@@ -50,7 +49,6 @@ const handlCompanyData = (e) => {
         experience: document.getElementById("experience").value,
         email: document.getElementById("contact").value,
     }
-
     salary_sum+=data.salary;
 
     console.log(data);
