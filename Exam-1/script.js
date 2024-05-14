@@ -1,8 +1,8 @@
 let company = [];
+let salary_sum=0
 
 const UIMaker = () => {
     document.getElementById("tbody").innerHTML = "";
-    document.getElementById("result").innerHTML = "";
     company.map((ele, index) => {
 
         tr = document.createElement("tr");
@@ -21,10 +21,9 @@ const UIMaker = () => {
         role = document.createElement("td");
         deleteButton = document.createElement("button");
         deleteButton.innerHTML = "Delete";
-        deleteButton.addEventListener("click", () => handleDelete(index));
-        deleteButton.addEventListener("click", countMin);
+        deleteButton.addEventListener("click", () => handleDelete(index,ele.salary));
 
-        
+
 
         td4 = document.createElement("td");
         td4.append(deleteButton);
@@ -34,12 +33,12 @@ const UIMaker = () => {
         else {
             role.innerHTML = "junior";
         }
-        countNew = document.createElement("td");
-        countNew.innerHTML = count;
         tr.append(employee, job, department, salary, email, experience, role, td4,)
         document.getElementById("tbody").append(tr);
     });
-    document.getElementById("result").innerHTML = `Total Employee ${company.length}`;
+    document.getElementById("result").innerHTML = `Total Employee : ${company.length} Total salary : ${salary_sum}`;
+    // document.getElementById("salary").innerHTML = `Total salary : ${salary_sum}`;
+    console.log(salary_sum);
 }
 const handlCompanyData = (e) => {
     e.preventDefault()
@@ -47,28 +46,27 @@ const handlCompanyData = (e) => {
         name: document.getElementById("name").value,
         job: document.getElementById("job role").value,
         company: document.getElementById("department").value,
-        salary: document.getElementById("salary").value,
+        salary: Number(document.getElementById("salary").value),
         experience: document.getElementById("experience").value,
         email: document.getElementById("contact").value,
     }
+
+    salary_sum+=data.salary;
+
     console.log(data);
     company.push(data);
     UIMaker();
 }
-const handleDelete = (index) => {
+const handleDelete = (index,salary) => {
     company.splice(index, 1);
+    salary_sum-=salary;
     UIMaker();
 }
 const deleteAll = () => {
     document.getElementById("tbody").innerHTML = "";
     company = [];
+    salary_sum = 0;
     UIMaker();
-}
-const countTotal = () => {
-}
-const countMin = () => {
-    countTotal();
 }
 document.getElementById("fire").addEventListener("click", deleteAll)
 document.getElementById("hire").addEventListener("click", handlCompanyData)
-document.getElementById("hire").addEventListener("click", countTotal)
