@@ -1,8 +1,8 @@
 let company = [];
 
-let count = 1;
 const UIMaker = () => {
     document.getElementById("tbody").innerHTML = "";
+    document.getElementById("result").innerHTML = "";
     company.map((ele, index) => {
 
         tr = document.createElement("tr");
@@ -39,7 +39,7 @@ const UIMaker = () => {
         tr.append(employee, job, department, salary, email, experience, role, td4,)
         document.getElementById("tbody").append(tr);
     });
-    document.getElementById("result").innerHTML = `Total Employee ${count}`;
+    document.getElementById("result").innerHTML = `Total Employee ${company.length}`;
 }
 const handlCompanyData = (e) => {
     e.preventDefault()
@@ -58,18 +58,15 @@ const handlCompanyData = (e) => {
 const handleDelete = (index) => {
     company.splice(index, 1);
     UIMaker();
-    count--;
 }
 const deleteAll = () => {
     document.getElementById("tbody").innerHTML = "";
     company = [];
-    count = 0;
+    UIMaker();
 }
 const countTotal = () => {
-    count ++;
 }
 const countMin = () => {
-    count --;
     countTotal();
 }
 document.getElementById("fire").addEventListener("click", deleteAll)
