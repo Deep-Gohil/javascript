@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div id="parent">
+        <h1 id="title">Hire A New Employee</h1>
+        <div class="inside-parent">
+            <form id="studentData">
+                <input type="text" placeholder="Enter Employee Name" id="name">
+                <select name="" id="job role">
+                    <option value="Select">Select Job Role</option>
+                    <option value="HR manager">HR Manager</option>
+                    <option value="SDE-1">SDE-1</option>
+                    <option value="SDE-2">SDE-2</option>
+                </select>
+                <select name="" id="department">
+                    <option value="Select Department">Select Department</option>
+                    <option value="Engineering">Engineering</option>
+                    <option value="HR">HR</option>
+                    <option value="Co-ordinator">Co-ordinator</option>
+                </select>
+                <input type="number" id="salary" placeholder="Monthaly Salary">
+                <input type="number" id="experience" placeholder="Prev Work Experience in Years">
+                <input type="email" placeholder="Contact Email" id="contact">
+                <button id="hire">Hire</button>
+            </form>
+        </div>
+    </div>
+    <table id="table" cellspacing="20px" cellpadding="15px" border="1">
+        <thead id="head">
+            <th>Employee Name</th>
+            <th>Job Role</th>
+            <th>Department</th>
+            <th>Salary</th>
+            <th>Contact Email</th>
+            <th>Work Experience</th>
+            <th>Role Type</th>
+            <th id="fire">Fire Employee</th>
+        </thead>
+        <tbody id="tbody">
+
+        </tbody>
+    </table>
+    <div class="details">
+        <h1>Details</h1>
+        <h2 id="result"></h2>
+        <h2 id="total-salary"></h2>
+    </div>
+
+</body>
+<script src="./script.js"></script>
+
+</html>

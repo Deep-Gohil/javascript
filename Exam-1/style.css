@@ -1,0 +1,76 @@
+#parent{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    background-image: url("https://img.freepik.com/free-vector/geometric-gradient-futuristic-background_23-2149116406.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#studentData{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    gap: 10px;
+}
+#table{
+    /* position: relative;
+    top: 100px ; */
+    margin-top: 50px;
+    gap: 50px;
+    border: 1px solid black;
+    font-size: 15px;
+    
+}
+#head
+{
+    background-color: yellow;
+    font-size: 18px;
+
+}
+#title{
+    text-align: center;
+}
+.inside-parent{
+    width: 400px;
+    height: 400px;
+    border: 1px solid black;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+    border: 2px solid rgba(255,255,255,.2);
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+}
+input{
+    height: 25px;
+    
+}
+select{
+    width: 70%;
+}
+#hire{
+    width: 30%;
+    background-color: blue;
+    color: white;
+    height: 30px;
+    font-weight:700;
+    font-size: 17px;
+}
+.details{
+    height: 300px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
