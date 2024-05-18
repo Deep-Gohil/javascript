@@ -1,3 +1,4 @@
+
 let company = [];
 let salary_sum=0
 
