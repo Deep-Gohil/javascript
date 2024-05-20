@@ -1,0 +1,70 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    /* background-color: black; */
+}
+.parent{
+    height: 800px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.under-parent{
+    height: 200px;
+    width: 800px;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-between;
+}
+.box{
+    width: 190px;
+    height: 200px;
+    /* background-color: antiquewhite; */
+    align-items: center;
+    display: flex;
+    gap: 15%;
+    flex-direction: column;
+    justify-content: center;
+}
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 80px;
+    color: aqua;
+}
+h3{
+    color: aqua;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h2{
+    color: aqua;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+}
+.date{
+    height: 100px;
+    width: 800px;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.days{
+    color: rgb(87, 236, 236);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+.mon{
+    font-size:  20px ;
+}
+.dates{
+    font-weight: bolder; 
+    color: aqua;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 27px;
+
+}
