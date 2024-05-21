@@ -1,0 +1,66 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.nav-link:hover
+{
+    text-decoration: underline;
+}
+.container-fluid {
+    max-width: 1400px;
+
+}
+@media (max-width: 1025px) {
+    .btn {
+        padding: 5px 40px 5px 40px;
+    }
+}
+@media (max-width: 250px) {
+    .btn {
+        padding: 5px 30px 5px 30px;
+    }
+}
+.font
+{
+    font-size: 90px;
+}
+.for-btn-hover:hover
+{
+    background-color: blue !important;
+    color: white !important;
+}
+.footer{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+/* slider-css */
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 110px !important; 
+    width: 110px !important;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .card-image{
+    height: 110px !important;
+    width: 110px !important;
+  }
+.swiper-image
+{
+    height: 90px !important;
+    width: 90px !important;
+}
