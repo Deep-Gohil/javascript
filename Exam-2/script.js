@@ -8,7 +8,7 @@ setTimeout(() => {
        alert("You can't submit Now");
     }
 
-  }, 100000);
+  }, 60000);
   
 
 const UIMaker = () => {        
