@@ -1,0 +1,69 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.parent{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    background-image: url("https://img.freepik.com/free-vector/geometric-gradient-futuristic-background_23-2149116406.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.inside-parent{
+    width: 400px;
+    height: 400px;
+    border: 1px solid black;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    background-color: transparent;
+    border: 2px solid rgba(255,255,255,.2);
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+}
+#form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10%;
+    height: 300px;
+    border: 1px solid black;
+    width: 300px;
+    border: 1px solid black;
+    font-size: 15px;    
+}
+.input{
+    height: 25px;
+    width: 250px;
+    text-align: center;
+}
+.submit{
+    padding: 5px;
+    width: 70px;
+    background-color: rgb(115, 115, 246);
+    color: white;
+}
+.print{
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.detail{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    gap: 5%;
+}

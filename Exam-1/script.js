@@ -3,7 +3,7 @@ let company = [];
 let salary_sum=0
 
 const UIMaker = () => {
-    document.getElementById("tbody").innerHTML = "";
+    document.getElementById("tbody").innerHTML = ""; 
     company.map((ele, index) => {
 
         tr = document.createElement("tr");
