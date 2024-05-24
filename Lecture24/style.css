@@ -1,0 +1,6 @@
+.isVelid:focus{
+    border: 2px solid green;
+}
+.isNotValid:focus{
+    border: 2px solid red;
+}
