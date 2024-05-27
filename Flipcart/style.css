@@ -1,0 +1,39 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#nav-search{
+    width: 350px;
+    margin-left: 5px;
+}
+.navigation{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* border: 1px solid black; */
+    height: 30px;
+}
+.main-nav{
+    border: 1px solid red;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 130px;
+    text-align: center;
+    justify-content: space-evenly;
+    border: 1px solid green;
+}
+#login{
+    margin-top: 5px;
+}

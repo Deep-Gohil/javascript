@@ -1,6 +1,32 @@
-.isVelid:focus{
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.isValid:focus{
     border: 2px solid green;
 }
 .isNotValid:focus{
     border: 2px solid red;
+}
+#username{
+    outline: none;
+}
+#number{
+    outline: none;
+}
+#password{
+outline: none  ;
+}
+.parent{
+    height: 500px;
+    background-color: aqua  ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inside{
+    height: 200px;
+    width: 200px;
+    border: 2px solid black;
 }
