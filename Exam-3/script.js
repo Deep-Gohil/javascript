@@ -208,10 +208,11 @@ const chekeAnswer = (index, selectedOption,btn) => {
     if (selectedOption === correctAnswer) {
         alert("correct answer.")
         btn.style.backgroundColor = "green"
-        navigator.vibrate(0);
+        navigator.vibrate(1000);
 
     } else {
         alert("Incorrect answer.")
         btn.style.backgroundColor = "red"
+        navigator.vibrate(1000);
     }
 }
