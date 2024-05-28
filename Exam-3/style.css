@@ -1,6 +1,7 @@
 *{
     margin: 0px;
     padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .btn{
     margin-right: 1%;
@@ -46,4 +47,10 @@
 }
 input{
     margin-top: 5%;
+}
+.correct{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: end;
 }

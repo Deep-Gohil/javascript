@@ -161,8 +161,8 @@ let questionsBank = [
         "answer": "getElementById()"
     },
 ];
-
-const UIMaker = () =>{
+let count = 0;
+const UIMaker = () => {
     questionsBank.map((ele, index) => {
         let h1 = document.createElement("h1");
         h1.innerHTML = `${ele.question}`
@@ -178,16 +178,17 @@ const UIMaker = () =>{
         btn2.setAttribute("class", "btn")
         btn3.setAttribute("class", "btn")
         btn4.setAttribute("class", "btn")
-        btn1.addEventListener("click", () => chekeAnswer(index, ele.option1,btn1))
-        btn2.addEventListener("click", () => chekeAnswer(index, ele.option2,btn2))
-        btn3.addEventListener("click", () => chekeAnswer(index, ele.option3,btn3))
-        btn4.addEventListener("click", () => chekeAnswer(index, ele.option4,btn4))
+        btn1.addEventListener("click", () => chekeAnswer(index, ele.option1, btn1))
+        btn2.addEventListener("click", () => chekeAnswer(index, ele.option2, btn2))
+        btn3.addEventListener("click", () => chekeAnswer(index, ele.option3, btn3))
+        btn4.addEventListener("click", () => chekeAnswer(index, ele.option4, btn4))
         let hr = document.createElement("hr")
         document.querySelector(".div").append(h1, btn1, btn2, btn3, btn4, hr);
+
     })
 }
 
-const addQuestions = (ele) =>{
+const addQuestions = (ele) => {
     ele.preventDefault();
     let data = {
         question: document.querySelector("#question").value,
@@ -200,16 +201,16 @@ const addQuestions = (ele) =>{
     questionsBank.push(data);
     UIMaker();
 }
-document.querySelector("#form").addEventListener("submit", addQuestions); 
+document.querySelector("#form").addEventListener("submit", addQuestions);
 UIMaker();
 
-const chekeAnswer = (index, selectedOption,btn) => {
+const chekeAnswer = (index, selectedOption, btn) => {
     const correctAnswer = questionsBank[index].answer;
     if (selectedOption === correctAnswer) {
         alert("correct answer.")
         btn.style.backgroundColor = "green"
-        navigator.vibrate(1000);
-
+        count += 1;
+        document.querySelector("#count").innerHTML = `Total Correct Answers :${count}`;
     } else {
         alert("Incorrect answer.")
         btn.style.backgroundColor = "red"
