@@ -190,7 +190,7 @@ const UIMaker = () => {
 
 const addQuestions = (ele) => {
     ele.preventDefault();
-    questionsBank = []; 
+    questionsBank = [];
     let data = {
         question: document.querySelector("#question").value,
         option1: document.querySelector("#option1").value,
