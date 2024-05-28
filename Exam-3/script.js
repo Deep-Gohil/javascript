@@ -207,12 +207,10 @@ UIMaker();
 const chekeAnswer = (index, selectedOption, btn) => {
     const correctAnswer = questionsBank[index].answer;
     if (selectedOption === correctAnswer) {
-        alert("correct answer.")
         btn.style.backgroundColor = "green"
         count += 1;
         document.querySelector("#count").innerHTML = `Total Correct Answers :${count}`;
     } else {
-        alert("Incorrect answer.")
         btn.style.backgroundColor = "red"
         navigator.vibrate(1000);
     }
