@@ -1,0 +1,55 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.form{
+    height: 400px;
+    width: 300px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.parentForm{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+}
+#form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;   
+}
+input{
+    margin-top: 5%; 
+}
+.print{
+    height: 250px;
+    width: 500px;
+    border: 1px solid black;
+}
+#deposit{
+    height: 50px;
+    width: 300px;
+    
+}
+.parent-depo{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.deposit{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.products{
+    display: flex;
+    justify-content: space-between;
+}
