@@ -1,0 +1,121 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.parent {
+    height: 700px;
+    width: 100%;
+    /* background-color: aqua */
+    background-image: linear-gradient(to bottom right, blue, red, yellow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.media-parent {
+    height: 450px;
+    width: 330px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.border-parent {
+    height: 420px;
+    width: 300px;
+}
+
+.username-parent {
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.username {
+    height: 40px;
+    width: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.three-dot {
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.user-picture {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-details {
+    height: 30px;
+    width: 75px;
+}
+
+#username {
+    font-size: 12px;
+    font-weight: bolder;
+}
+
+#d-name {
+    font-size: 12px;
+}
+
+.post-image {
+    margin-top: 3%;
+    height: 250px;
+    width: 300px;
+}
+
+.main-icon {
+    margin-top: 7%;
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.three-icon {
+    height: 40px;
+    width: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#i {
+    font-size: 20px;
+}
+.one-icon{
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+#like{
+    font-weight: bold;
+    font-size: 17px;
+}
+#comment{
+    color: rgb(116, 116, 117);
+    font-size: 12px;
+}
+#ago{
+    margin-top: 2%;
+    font-size: 10px;
+    color: rgb(116, 116, 117);
+}
