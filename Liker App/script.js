@@ -5,6 +5,8 @@ const handleLikes = () =>{
     document.querySelector("#like").innerHTML = `${count} Likes`;
     let icon = document.querySelector(".like")
     icon.style.color = "red"
+    icon.classList.remove("fa-regular")
+    icon.classList.add("fa-solid")
     localStorage.setItem("count", count)
 }
 
