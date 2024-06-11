@@ -5,7 +5,6 @@ const deleteProduct = (id) =>{
     products.splice(id, 1);
     UIMaker(products);
 }
-
 const UIMaker = (data) =>{
     document.querySelector("#products").innerHTML = " "
     data.map((ele,index)=>{
