@@ -17,7 +17,6 @@ const signIn = (e) => {
         localStorage.setItem("isSignUp", true)
     }
     window.location.href = "/Project/index.html"
-    return data.firstName
 }
 
 document.querySelector("#form").addEventListener("submit", signIn)
