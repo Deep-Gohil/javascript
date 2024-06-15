@@ -19,7 +19,8 @@ const login = (e) => {
             error.innerHTML = `Ex Ka Number Yadd Rehta Hai, <br> Password nahi`
             // document.getElementById("password").addclassList("borderRed") 
         }
-        // window.location.href = "/Project/index.html"
+        window.location.href = "/Project/index.html"
+        document.getElementById("navbar").innerHTML = Navbar(signUp.firstName)
     }
     else{
         alert("Please Sign Up First")
@@ -29,4 +30,4 @@ const login = (e) => {
 }
 
 document.getElementById("form").addEventListener("submit",login)
-document.getElementById("navbar").innerHTML = Navbar(signUp.firstName)
+document.getElementById("navbar").innerHTML = Navbar()

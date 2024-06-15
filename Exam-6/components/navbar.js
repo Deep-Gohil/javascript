@@ -1,6 +1,10 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+
+
+const Navbar = () => {
+    return `
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">Javascript</a>
+        <a class="navbar-brand" href="#">Library</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
             aria-expanded="false" aria-label="Toggle navigation">
@@ -9,22 +13,21 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/Project/index.html">Home</a>
+                    <a class="nav-link" href="/Exam-6/index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/Project/pages/add.html">Add Product</a>
+                    <a class="nav-link" href="/Exam-6/pages/dashboard.html">Dashboard</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/Project/pages/signup.html">Sign-Up</a>
+                    <a class="nav-link" href="/Exam-6/pages/myBook.html">My Books</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/Project/pages/login.html">Log-in</a>
+                    <a class="nav-link" href="/Exam-6/pages/bookmark.html">Bookmark</a>
                 </li>
             </ul>
-            <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
         </div>
     </div>
-</nav>
+</nav>`
+}
+
+export default Navbar

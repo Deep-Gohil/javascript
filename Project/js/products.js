@@ -1,6 +1,6 @@
 import Navbar from "../components/navbar.js";
 let products = JSON.parse(localStorage.getItem('products')) || [];
-
+let signUp = JSON.parse(localStorage.getItem('signUP')) || false;
 const UIMaker = (data) =>{
     document.querySelector("#products").innerHTML = " "
     data.map((ele,index)=>{
@@ -32,4 +32,4 @@ const deleteProduct = (index) =>{
 
 UIMaker(products)
 
-document.getElementById("navbar").innerHTML = Navbar()
+document.getElementById("navbar").innerHTML = Navbar(signUp.firstName)
