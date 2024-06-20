@@ -1,0 +1,187 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav .navbar-brand {
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav .navbar-toggler {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+nav .navbar-nav {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+nav .navbar-nav li {
+    margin-left: 20px;
+}
+
+nav .navbar-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#hero {
+    background: url('hero-background.jpg') no-repeat center center/cover;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+}
+
+#hero h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+#hero p {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section {
+    padding: 60px 0;
+}
+
+h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.project-item {
+    width: 100%;
+    background: #f4f4f4;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+@media (min-width: 768px) {
+    .project-item {
+        width: 45%;
+    }
+}
+
+.project-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.project-item p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.project-item a {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px 20px;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media (max-width: 767px) {
+    nav .navbar-toggler {
+        display: block;
+    }
+
+    nav .navbar-nav {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    nav .navbar-nav li {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    nav .navbar-nav.show {
+        display: flex;
+    }
+
+    #hero h1 {
+        font-size: 32px;
+    }
+
+    #hero p {
+        font-size: 18px;
+    }
+
+    .project-item {
+        width: 100%;
+    }
+}

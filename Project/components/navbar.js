@@ -25,6 +25,9 @@ const Navbar = (username = 'User') => {
                     <li class="nav-item">
                         <a class="nav-link" href="/Project/pages/product.html">Products</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Project/pages/cart.html">Cart</a>
+                    </li>
                 </ul>
                 <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="searchInput">

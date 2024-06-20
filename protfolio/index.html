@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <a class="navbar-brand" href="#">My Portfolio</a>
+                <button class="navbar-toggler" id="navbar-toggler">
+                    ☰
+                </button>
+                <ul class="navbar-nav" id="navbar-nav">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="hero">
+            <div class="container">
+                <h1>Welcome to My Portfolio</h1>
+                <p>I'm a passionate developer creating awesome websites and applications.</p>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="container">
+                <h2>About Me</h2>
+                <p>Hello! I'm [Your Name], a web developer with a love for creating beautiful and functional web applications. With a background in [your background], I bring a unique perspective to every project I work on.</p>
+            </div>
+        </section>
+
+        <section id="projects">
+            <div class="container">
+                <h2>Projects</h2>
+                <div class="project-list">
+                    <div class="project-item">
+                        <h3>Project 1</h3>
+                        <p>Description of project 1.</p>
+                        <a href="#">View Project</a>
+                    </div>
+                    <div class="project-item">
+                        <h3>Project 2</h3>
+                        <p>Description of project 2.</p>
+                        <a href="#">View Project</a>
+                    </div>
+                    <!-- Add more projects as needed -->
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <h2>Contact</h2>
+                <form id="contactForm">
+                    <input type="text" id="name" placeholder="Your Name" required>
+                    <input type="email" id="email" placeholder="Your Email" required>
+                    <textarea id="message" placeholder="Your Message" required></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>

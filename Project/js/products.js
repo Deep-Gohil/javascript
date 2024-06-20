@@ -1,6 +1,29 @@
 import Navbar from "../components/navbar.js";
 let products = JSON.parse(localStorage.getItem('products')) || [];
 let signUp = JSON.parse(localStorage.getItem('signUP')) || false;
+let cartList = JSON.parse(localStorage.getItem("cartList")) || []
+
+const isExists = (id) => {
+    let temp = cartList.filter((item) => item.id == id)
+    return temp.length > 0 ? true : false
+}
+
+const handleCartList = (ele) => {
+    if (isExists(ele.id)) {
+        cartList.map((item, i) => {
+            if (item.id == ele.id) {
+                cartList[i].qty += 1
+            }
+        })
+        alert("Quentity Incresse Successfully")
+    }
+    else {
+        cartList.push({ ...ele, qty: 1 })
+        alert("Successfully Added To Cart")
+    }
+    localStorage.setItem("cartList", JSON.stringify(cartList))
+    console.log(cartList);
+}
 
 const UIMaker = (data) => {
     document.querySelector("#products").innerHTML = "";
@@ -14,7 +37,7 @@ const UIMaker = (data) => {
         deleteButton.addEventListener('click', () => { deleteProduct(index) });
         let buy = document.createElement('button');
         buy.innerHTML = 'Buy';
-        buy.addEventListener('click', () => { alert("Product Buy Successfully") });
+        buy.addEventListener("click", () => handleCartList(ele));
         let span = document.createElement('span');
         span.append(buy, deleteButton);
         image.src = ele.image;
@@ -46,7 +69,7 @@ const handleSort = (value) => {
 const handleSearch = (e) => {
     e.preventDefault();
     let inputData = document.getElementById('searchInput').value;
-    let temp = products.filter(ele => ele.title.includes(inputData));   
+    let temp = products.filter(ele => ele.title.includes(inputData));
     UIMaker(temp);
 };
 
