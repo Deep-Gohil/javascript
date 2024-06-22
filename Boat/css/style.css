@@ -1,0 +1,113 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.more {
+  font-size: 13px;
+}
+
+.shopByMain {
+  height: 80px;
+  width: 250px;
+  text-align: center;
+}
+
+.shopBy {
+  font-size: 20px;
+}
+
+.category {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.shopByProducts {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+}
+
+.productShopBy {
+  font-size: 13px;
+  font-weight: 700;
+  text-align: center;
+}
+
+
+.box {
+  height: 3px;
+  width: 30px;
+  background-color: brown;
+  margin-left: -80px;
+  margin-top: 5px;
+}
+
+.summer {
+  height: 80px;
+  width: 180px;
+  text-align: center;
+}
+
+.summerProduct {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.mainSummerPrice{
+  position: relative;
+  top: -15px;
+}
+.addCartMain{
+  height: 40px;
+  width: 100px;
+  background-color: black;
+  border-radius: 7px;
+  color: white;
+  align-items: center;
+  text-align: center;
+  font-weight: 700;
+  font-size: 15px;
+}
+.pri{
+  margin: 0px;
+  padding: 0px;
+}
+#pri{
+  font-size: 15px;
+  font-weight: 700;
+}
+.fa-star{
+  font-size: 13px;
+  color: rgb(222, 190, 7);
+}
+.fa-certificate{
+  font-size: 13px;
+  color: green;
+}
+.Add{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 40px;
+  width: 100px;
+}
+
+
+
+
+@media screen and (max-device-width : 995px) {
+  .shopByProducts {
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .summerProduct {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr)
+  }
+  .addCartMain{
+    width: 70px;
+    font-size: 10px;
+  }
+}
