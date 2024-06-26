@@ -118,6 +118,7 @@ const handleLike = (index) => {
     localStorage.setItem(`likes_${data[index].id}`, JSON.stringify(data[index].likes));
 }
 const Mapper = (data) => {
+    document.getElementById("places").innerHTML = ""
     data.map((ele,index) => {
         let div = document.createElement("div");
         let title = document.createElement("h1");

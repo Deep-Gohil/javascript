@@ -11,7 +11,6 @@ document.getElementById("about").innerHTML = bookList.description
 
 const handleData = (e) => {
     e.preventDefault();
-    console.log("dhusjhj");
     let comment = document.getElementById("commentInput").value 
     document.getElementById("comment").innerHTML = `Comment: ${comment}`
 }
