@@ -1,0 +1,125 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#parent{
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    background-image: url("https://img.freepik.com/free-photo/photorealistic-style-clouds_23-2151058968.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#studentData{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    gap: 10px;
+}
+.inside-parent{
+    width: 900px;
+    height: 500px;
+    border: 1px solid black;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: transparent;
+    border: 2px solid rgba(255,255,255,.2);
+    backdrop-filter: blur(30px);
+    border-radius: 15px;
+}
+.containerr{
+    height: 400px;
+    width: 700px;
+}
+.name{
+    height: 200px;
+    width: 200px;
+    /* border: 1px solid black; */
+    color: White;
+}
+.section{
+    height: 200px;
+    width: 700px;
+    display: flex;
+    justify-content: space-between;
+}
+.degree{
+    height: 200px;
+    width: 200px;
+}
+#cityName{
+    font-size: 40px;
+    /* font-weight: 600; */
+}
+#date{
+    position: relative;
+    top: -10px;
+    /* font-weight: 700; */
+}
+#cloud-status{
+    margin-top: -15px;
+    font-size: 25px;
+    font-weight: 600;
+}
+#temperature{
+    color: white;
+    font-size: 100px;
+    display: flex;
+    justify-content: end;
+}
+#windSpeed{
+    color: rgb(24, 66, 92);
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    margin-top: -13%;
+}
+#hr{
+    color: white;
+    height: 2px;
+    width: 100%;
+    background-color: white;
+}
+.hour-parent{
+    height: 150px;
+    width: 700px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.div{
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    font-weight: 700;
+}
+.h6{
+    font-size: 25px;
+    font-weight: 700;
+}
+.search-icon{
+    height: 30px;
+    width: 40px;
+    background-color: white;
+    border-radius: 0px 13px 13px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search-bar{
+    display: flex;
+}
+#search{
+    border: none;
+    border-radius: 13px 0px 0px 13px;
+    background-color: white;
+    text-align: center;
+}
