@@ -1,0 +1,29 @@
+{
+  "user": [
+    {
+      "id": "5612",
+      "name": "admin",
+      "grid": "4433",
+      "course": "full stack",
+      "email": "deep888gohil@gmail.com",
+      "password": "12345678"
+    },
+    {
+      "id": "8bad",
+      "name": "deep",
+      "grid": "3435",
+      "course": "full stack",
+      "email": "deep473647@gmail.com",
+      "password": "3763587438"
+    },
+    {
+      "id": "4928",
+      "name": "milan",
+      "grid": "4633",
+      "course": "full stack",
+      "email": "mr.patel5534@gmail.com",
+      "password": "`123456789"
+    }
+  ],
+  "products": []
+}
