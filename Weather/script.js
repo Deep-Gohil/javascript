@@ -11,14 +11,17 @@ const Mapper = (data) => {
     humidity.innerHTML = `Humidity: ${data.main.humidity}%`;
     windSpeed.innerHTML = `Wind Speed: ${data.wind.speed} m/s`;
 }
+
 const API = async (cityName) => {
     let request = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=fbec3de2e0ae4b24f2653e65ce78b9f2&units=matric`)
     let response = await request.json()
     Mapper(response)
     console.log(response);
 }
+
 const dataInput = () =>{
     let cityName = document.getElementById("search").value 
     API(cityName)
 }
+
 document.getElementById("Search-Icon").addEventListener("click", dataInput)
