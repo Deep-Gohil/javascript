@@ -1,0 +1,47 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.sonyParent{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    text-align: center;
+    height: 30px;
+    width: 100%;
+    background-color: black;
+ }
+.sony{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 20px;
+}
+.boxDummy{
+    height: 30px;
+    width: 200px;
+    background-color: white;
+}
+.sectionOne {
+    background-image: url("https://gmedia.playstation.com/is/image/SIEPDC/astro-bot-hero-desktop-01-en-23may24?$4000px$");
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+}
+.sectionOneDetails{
+    height: 400px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.SectionBox{
+    position: relative;
+    top: 14%;
+    color: white;
+    height: 400px;
+    width: 390px;
+}
+.astro{
+    height: 100px;
+    width: 100px;
+}
