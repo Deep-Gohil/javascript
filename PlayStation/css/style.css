@@ -45,3 +45,77 @@
     height: 100px;
     width: 100px;
 }
+.navSearch{
+    height: 30px;
+    border-radius: 5px;
+}
+.bt{
+    height: 30px;
+    width: 60px;
+    color: black;
+    background-color: aliceblue;
+}
+.bt:hover{
+    color: white;
+    background-color: rgb(176, 212, 243);
+}
+.images{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+}
+.box{
+    height: 100px;
+    width: 100px;
+    background-color: black;
+}
+.sectiontwo{
+    height: 300px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+.fiveImages:hover{
+    position: relative;
+    top: -10px;
+    border: 2px solid blue;
+    border-radius: 5%;
+}
+.inner{
+    display: flex;
+    justify-content: space-between;
+}
+.sectionThreeDetails{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 400px;
+    width: 300px;
+}
+.sectionThreeImage{
+    height: 400px;
+    width: 600px;
+}
+.intro{
+    font-size: 25px;
+}
+.consolesecThree{  
+    font-size: 15px;
+    color: blue;
+}
+.exp{
+    font-size: 10px;
+}
+.findOutMore{
+    width: 150px;
+    font-size: 13px;
+    font-weight: 700;
+    color: white;
+}
+.sectionThreeConected{
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.sectionThreeConected{
+    gap: 10%;
+}

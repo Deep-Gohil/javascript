@@ -1,8 +1,6 @@
 
 const Navbar = () => {
-    return `<div class="sonyParent">
-        <h1 class="sony">SONY</h1>
-    </div>
+    return `
     <nav class="navbar navbar-expand-lg ">
         <div class="container-fluid">
             <a class="navbar-brand" href="#"><img src="https://static-00.iconduck.com/assets.00/playstation-icon-2048x1665-icu9gzjj.png" height="40px" width="40px" class="img-fluid" alt=""></a>
@@ -106,8 +104,8 @@ const Navbar = () => {
                     
                 </ul>
                 <form class="d-flex" role="search">
-                    <input id="navbarInput" class="form-contro me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-secondary" type="submit">Search</button>
+                    <input id="navbarInput" class="form-contro me-2 navSearch" type="search" placeholder="Search" aria-label="Search">
+                    <button class="bt btn-outline-secondary navSearch" type="submit">Search</button>
                 </form>
             </div>
         </div>
