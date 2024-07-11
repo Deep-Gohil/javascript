@@ -1,5 +1,73 @@
 import Navbar from "../components/navbar.js";
 document.getElementById("navbar").innerHTML = Navbar()
+let newRealese = [
+    {
+        image:"https://gmedia.playstation.com/is/image/SIEPDC/rise-of-the-ronin-listing-thumb-en-28mar23",
+        title:"Rise Of The Ronil"
+    },
+    {
+        image:"https://gmedia.playstation.com/is/image/SIEPDC/marvels-spider-man-2-thumbnail-02-en-01oct21?$1200px$",
+        title:"Marvel's Spider-man 2"
+    },
+    {
+        image:"https://gmedia.playstation.com/is/image/SIEPDC/stellar-blade-ps5-20april23en",
+        title:"Steller Blade"
+    },
+    {
+        image:"https://gmedia.playstation.com/is/image/SIEPDC/ea-sports-fc-store-art-01-en-27sept23",
+        title:"EA Sports FC24"
+    },
+    {
+        image:"https://gmedia.playstation.com/is/image/SIEPDC/elden-ring-shadow-of-the-erdtree-keyart-01-en-28feb24?$800px$",
+        title:"Elder Ring Shadow Of The Elder"
+    },
+    {
+        image:"https://gmedia.playstation.com/is/image/SIEPDC/helldivers-2-store-art-01-en-4march24",
+        title:"Helldivers 2"
+    },
+    {
+        image:"https://gmedia.playstation.com/is/image/SIEPDC/god-of-war-ragnarok-listing-thumb-01-09sep21$en",
+        title:"God Of War Ragnarok"
+    },
+    {
+        image:"https://gmedia.playstation.com/is/image/SIEPDC/The-last-of-us-part-ii-remastered-packshot-01-26feb24$en",
+        title:"The Last Us Part II remastered "
+    },
+    {
+        image:"https://gmedia.playstation.com/is/image/SIEPDC/final-fantasy-vii-rebirth-pack-01-en-30oct23",
+        title:"Final Fantasy VII Rebirth"
+    },
+    {
+        image:"https://gmedia.playstation.com/is/image/SIEPDC/zenless-zone-zero-packshot-01-en-17may24",
+        title:"Zenless Zero"
+    },
+    {
+        image:"https://gmedia.playstation.com/is/image/SIEPDC/call-of-duty-modern-warfare-3-pack-01-en-22aug23",
+        title:"Call Of Duty: Modern Warfare III"
+    },
+    {
+        image:"https://gmedia.playstation.com/is/image/SIEPDC/lego-fortnite-pack-01-en-01dec23",
+        title:"LEGO Fortnite"
+    },
+]
+
+const displayData = (data) => {
+    data.map((ele)=>{
+        let div = document.createElement("div");
+        div.className = "cardhsy"
+        let img = document.createElement("img");
+        img.src = ele.image;
+        img.classList.add("img-flui","img-new")
+        let title = document.createElement("h6");
+        title.innerHTML = ele.title;
+        title.classList.add("text-light")
+        div.appendChild(img);
+        div.appendChild(title);
+        document.querySelector("#newReleases").appendChild(div);
+    })
+}
+
+displayData(newRealese);
 
 let data = [
     {
@@ -51,7 +119,6 @@ let data = [
         image:"https://gmedia.playstation.com/is/image/SIEPDC/media-remote-featured-hardware-image-block-01-en-11aug23?$1600px$"
     }
 ]
-
 const handlePrint = (ele) => {
     document.querySelector(".intro").innerHTML = ele.intro
     document.querySelector(".consolesecThree").innerHTML = console
@@ -79,5 +146,4 @@ const mapper = (data) => {
         document.querySelector(".sectionThreeConected").append(div)
     })
 }
-
 mapper(data)
