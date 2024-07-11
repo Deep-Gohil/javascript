@@ -158,12 +158,37 @@
     font-weight: 700;
 }
 .img-new{
-    height: 170px;
-    width: 170px;
+    height: 150px;
+    width: 150px;
     cursor: pointer;
     transition: transform .5s;
     margin-bottom: 10px;
 }
 .img-new:hover{
     transform: scale(1.1)
+}
+.sectionFive {
+    background-image: url("https://gmedia.playstation.com/is/image/SIEPDC/play-play-play-ps-plus-background-desktop-01-ja-jp-03jul23?$4000px$");
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3%;
+}
+.secFiveInner{
+    height: 400px;
+    background-color: aqua;
+}
+.playstationPlusFive{
+    height: 40px;
+    width: 200px;
+}
+.discoverSecFive{
+    font-size: 30px;
+}
+.secFivePlay{
+    font-size: 12px;
 }
