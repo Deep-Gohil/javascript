@@ -1,9 +1,10 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
 }
-.sonyParent{
+
+.sonyParent {
     display: flex;
     justify-content: end;
     align-items: center;
@@ -11,122 +12,145 @@
     height: 30px;
     width: 100%;
     background-color: black;
- }
-.sony{
+}
+
+.sony {
     font-family: Arial, Helvetica, sans-serif;
     color: white;
     font-size: 20px;
 }
-.boxDummy{
+
+.boxDummy {
     height: 30px;
     width: 200px;
     background-color: white;
 }
+
 .sectionOne {
     background-image: url("https://gmedia.playstation.com/is/image/SIEPDC/astro-bot-hero-desktop-01-en-23may24?$4000px$");
     background-position: center;
     background-size: cover;
     height: 400px;
 }
-.sectionOneDetails{
+
+.sectionOneDetails {
     height: 400px;
     width: 100%;
     display: flex;
     align-items: center;
 }
-.SectionBox{
+
+.SectionBox {
     position: relative;
     top: 14%;
     color: white;
     height: 400px;
     width: 390px;
 }
-.astro{
+
+.astro {
     height: 100px;
     width: 100px;
 }
-.navSearch{
+
+.navSearch {
     height: 30px;
     border-radius: 5px;
 }
-.bt{
+
+.bt {
     height: 30px;
     width: 60px;
     color: black;
     background-color: aliceblue;
 }
-.bt:hover{
+
+.bt:hover {
     color: white;
     background-color: rgb(176, 212, 243);
 }
-.images{
+
+.images {
     display: grid;
-    grid-template-columns: repeat(5,1fr);
+    grid-template-columns: repeat(5, 1fr);
 }
-.box{
+
+.box {
     height: 100px;
     width: 100px;
     background-color: black;
 }
-.sectiontwo{
+
+.sectiontwo {
     height: 300px;
     display: flex;
     /* justify-content: center; */
     align-items: center;
 }
-.fiveImages{
+
+.fiveImages {
     transition-duration: 0.5s;
     transform: translateY(0px);
 }
-.fiveImages:hover{
+
+.fiveImages:hover {
     transform: translateY(-25px);
     /* position: relative; */
     /* top: -10px; */
     border: 2px solid blue;
     border-radius: 5%;
 }
-.inner{
+
+.inner {
     display: flex;
     justify-content: space-between;
 }
-.sectionThreeDetails{
+
+.sectionThreeDetails {
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 400px;
     width: 300px;
 }
-.sectionThreeImage{
-    height: 400px;
-    width: 600px;
-}
-.intro{
+
+/* .sectionThreeImage{
+    height: 200px;
+    width: 200px;
+} */
+.intro {
     font-size: 25px;
 }
-.consolesecThree{  
+
+.consolesecThree {
     font-size: 15px;
     color: blue;
 }
-.exp{
+
+.exp {
     font-size: 10px;
 }
-.findOutMore{
+
+.findOutMore {
     width: 150px;
     font-size: 13px;
     font-weight: 700;
     color: white;
 }
-.sectionThreeConected{
+
+.sectionThreeConected {
     text-align: center;
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
 }
-.sectionThreeConected{
+
+.sectionThreeConected {
     gap: 10%;
 }
-.sectionFour{
+
+.sectionFour {
     margin-top: 5%;
-    height: 650px;
+    /* height: 650px; */
     background-color: black;
     width: 100%;
     display: flex;
@@ -135,19 +159,23 @@
     align-items: center;
     gap: 3%;
 }
-.great{
+
+.great {
     font-size: 30px;
     font-weight: 700;
 }
-.FourBox{
-    height: 500px;
+
+.FourBox {
+    /* height: 500px;  */
     display: grid;
-    grid-template-columns: repeat(6,1fr);
+    grid-template-columns: repeat(6, 1fr);
 }
-.newRealeseParent{
+
+.newRealeseParent {
     height: 50px;
 }
-.newRealeseButton{
+
+.newRealeseButton {
     background-color: white;
     color: black;
     width: 150px;
@@ -157,38 +185,85 @@
     font-size: 15px;
     font-weight: 700;
 }
-.img-new{
+
+.img-new {
     height: 150px;
     width: 150px;
     cursor: pointer;
     transition: transform .5s;
     margin-bottom: 10px;
 }
-.img-new:hover{
+
+.img-new:hover {
     transform: scale(1.1)
 }
+
 .sectionFive {
+    margin-top: 5%;
     background-image: url("https://gmedia.playstation.com/is/image/SIEPDC/play-play-play-ps-plus-background-desktop-01-ja-jp-03jul23?$4000px$");
     background-position: center;
     background-size: cover;
-    height: 500px;
+    /* height: 550px; */
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 3%;
 }
-.secFiveInner{
+
+.secFiveInner {
     height: 400px;
     background-color: aqua;
 }
-.playstationPlusFive{
+
+.playstationPlusFive {
     height: 40px;
     width: 200px;
 }
-.discoverSecFive{
+
+.discoverSecFive {
     font-size: 30px;
 }
-.secFivePlay{
+
+.secFivePlay {
     font-size: 12px;
+}
+
+
+
+@media screen and (max-device-width : 1111px) {
+    .FourBox {
+        /* height: 500px; */
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media screen and (max-device-width : 780px) {
+    .FourBox {
+        /* height: 500px; */
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-device-width : 550px) {
+    .img-new {
+        height: 100px;
+        width: 100px;
+        cursor: pointer;
+        transition: transform .5s;
+        margin-bottom: 10px;
+    }
+
+    .sectionThreeConected {
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .sectionFour {
+        margin-top: 0%;
+    }
+
 }

@@ -133,7 +133,7 @@ const mapper = (data) => {
 
         let image = document.createElement('img');
         image.src = ele.image;
-        image.classList.add('img-fluid');
+        image.classList.add('img-fluid',"secThreeImage");
         image.addEventListener('click', () => {
             handlePrint(ele)
         })
