@@ -8,7 +8,7 @@ const Mapper = (data) => {
     cityName.innerHTML = data.name;
     temperature.innerHTML = `${Math.round(data.main.temp - 273.15)}°`;
     temperaturee.innerHTML = `${Math.round(data.main.temp - 273.15)}°`;
-    humidity.innerHTML = `Humidity: ${data.main.humidity}%`;
+    // humidity.innerHTML = `Humidity: ${data.main.humidity}%`;
     windSpeed.innerHTML = `Wind Speed: ${data.wind.speed} m/s`;
 }
 
