@@ -92,10 +92,10 @@ const Navbar = () => {
                         </ul>
                     </li>
                     <li class="nav-item">
-          <a class="nav-link btn btn-primary border border-2" href="/PlayStation/pages/signUP.html">Sign-UP</a> </a>
+          <a class="nav-link btn btn-primary border border-2" href="/PlayStation/pages/signUP.html" target="_blank">Sign-UP</a> </a>
         </li>
                     <li class="nav-item">
-          <a class="nav-link btn btn-primary border border-2" href="/PlayStation/pages/logIn.html">Log-in</a> </a>
+          <a class="nav-link btn btn-primary border border-2" href="/PlayStation/pages/logIn.html" target="_blank">Log-in</a> </a>
         </li>
 
                     

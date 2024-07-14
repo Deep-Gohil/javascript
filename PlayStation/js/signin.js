@@ -12,6 +12,8 @@ const handleSignpost = (e) => {
         signUpDate: new Date().toISOString().split('T')[0]
     }
     localStorage.setItem("signUpData", JSON.stringify(user));
+    localStorage.setItem("isSignUP", true);
+    window.location.href = "/PlayStation/index.html";
 }
 
 document.getElementById("form").addEventListener("submit", handleSignpost)
