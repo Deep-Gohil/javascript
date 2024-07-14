@@ -121,7 +121,7 @@ let data = [
 ]
 const handlePrint = (ele) => {
     document.querySelector(".intro").innerHTML = ele.intro
-    document.querySelector(".consolesecThree").innerHTML = console
+    document.querySelector(".consolesecThree").innerHTML = ele.console
     document.querySelector(".exp").innerHTML = ele.exp
     document.querySelector(".imageSecThree").src = ele.image
 }
