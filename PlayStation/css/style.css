@@ -228,6 +228,136 @@
 .secFivePlay {
     font-size: 12px;
 }
+.sectionSix{
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    align-items: center;
+}
+.storeSix{
+    height: 100px;
+    width: 200px;
+}
+.sixParent{
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Sixinner{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.secSixMainImage{
+    height: 500px;
+    width: 600px;
+}
+.sixInnerDetail{
+    height: 300px;
+    width: 250px;
+}
+.newSix{
+    font-size: 25px;
+}
+.SixExplore{
+    font-size: 12px;
+}
+.footer {
+    background-color: #003087;
+    color: white;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer h6 {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.footer ul {
+    padding-left: 0;
+}
+
+.footer ul li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.footer hr {
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.footer .text-left a,
+.footer .text-right a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer .text-left a:hover,
+.footer .text-right a:hover {
+    text-decoration: underline;
+}
+
+.footer .list-inline-item a {
+    color: white;
+}
+
+.footer .list-inline-item a:hover {
+    text-decoration: underline;
+}
+.sonyinter{
+    height:80px;
+    width: 150px;
+    color: black;
+}
+.footerh6{
+    font-weight: 800;
+}
+.mainsignUp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    width: 100%;
+}
+.innerSignUp{
+    border: 1px solid black;
+    height: 400px;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+#form{
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    /* gap: 10px; */
+    /* width: 0px; */
+}
+.userAndLast{
+    height: 30px;
+    width: 150px;
+}
+.inputFour{
+    height: 30px;
+    width: 200px;
+}
+.sub{
+    /* height: 30px; */
+    width: 100px;
+}
+
+
 
 
 
@@ -263,7 +393,7 @@
     }
 
     .sectionFour {
-        margin-top: 0%;
+        margin-top: 50%;
     }
 
 }

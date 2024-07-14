@@ -39,5 +39,5 @@ const dataInput = () => {
     API(cityName);
 }
 
-document.getElementById("Search-Icon").addEventListener("click", dataInput);
+document.getElementById("Search-Icon").addEventListener("click", dataInput);    
 window.addEventListener("load", getLocation);

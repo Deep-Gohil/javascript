@@ -1,7 +1,7 @@
 
 const Navbar = () => {
     return `
-    <nav class="navbar navbar-expand-lg ">
+   <nav class="navbar navbar-expand-lg ">
         <div class="container-fluid">
             <a class="navbar-brand" href="#"><img src="https://static-00.iconduck.com/assets.00/playstation-icon-2048x1665-icu9gzjj.png" height="40px" width="40px" class="img-fluid" alt=""></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -91,16 +91,13 @@ const Navbar = () => {
                             <li><a class="dropdown-item" href="/PlayStation/pages/store/subscribe.html">Subscribe To PS Plus</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Support
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="/PlayStation/pages/support/support.html">Support</a></li>
-                            <li><a class="dropdown-item" href="/PlayStation/pages/support/PSNStatus.html">PSN Status</a></li>
-                        </ul>
-                    </li>
+                    <li class="nav-item">
+          <a class="nav-link btn btn-primary border border-2" href="/PlayStation/pages/signUP.html">Sign-UP</a> </a>
+        </li>
+                    <li class="nav-item">
+          <a class="nav-link btn btn-primary border border-2" href="/PlayStation/pages/logIn.html">Log-in</a> </a>
+        </li>
+
                     
                 </ul>
                 <form class="d-flex" role="search">
